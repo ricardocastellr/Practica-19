@@ -6,4 +6,4 @@ let personSchema = new mongoose.Schema({ // Instanciamos un nuevo Schema de mong
     nss: String
 });
 
-module.exports = mongoose.model('Persons', personSchema) // Exportamos una instancia de un modelo de mongoose
+module.exports = mongoose.model('Persons', personSchema) // Exportamos una instancia de un modelo de mongoose para poder acceder a el desde otros archivos
