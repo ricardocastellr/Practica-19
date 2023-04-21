@@ -4,7 +4,7 @@ const mongoose = require('mongoose'); // Inyectamos mongoose
 let Person = require('../models/persons'); // Inyectamos persons del modelo creado anteriormente
 
 router.get('/gente', async (req, res) =>{ // Creamos una ruta para obtener todos los documentos de persons
-    const Persons = await Person.find({},{}); // Obtenemos todas las personas y las guardamos en esta variable Persons
+    const Persons = await Person.find({}); // Obtenemos todas las personas y las guardamos en esta variable Persons
     res.json(Persons); // Respondemos con un json con la variable Persons (esto es para que el front-end pueda entenderlo)
 });
 
