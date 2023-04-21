@@ -4,7 +4,7 @@ const mongoose = require('mongoose'); // Inyectamos mongoose
 let Person = require('../models/persons'); // Inyectamos persons del modelo creado anteriormente
 
 router.get('/gente', async (req, res) =>{
-    const Persons = await Person.find({ });
+    const Persons = await Person.find({});
     res.json(Persons);
 });
 
